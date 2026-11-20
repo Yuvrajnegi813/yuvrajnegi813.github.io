@@ -872,3 +872,28 @@ nav h2 {
 nav h2 span {
     color: #38bdf8;
 }
+/* Premium Logo Styling */
+nav .logo {
+    color: #ffffff;
+    font-size: 27px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    position: relative;
+    cursor: pointer;
+}
+
+nav .logo::after {
+    content: "";
+    position: absolute;
+    width: 45%;
+    height: 3px;
+    background: #38bdf8;
+    left: 0;
+    bottom: -7px;
+    border-radius: 10px;
+    transition: width 0.3s ease;
+}
+
+nav .logo:hover::after {
+    width: 100%;
+}
