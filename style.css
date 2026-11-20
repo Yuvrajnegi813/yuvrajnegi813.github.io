@@ -897,3 +897,6 @@ nav .logo::after {
 nav .logo:hover::after {
     width: 100%;
 }
+nav .logo {
+    display: inline-block;
+}
