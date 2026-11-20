@@ -368,3 +368,33 @@ section h2 {
         text-align: center;
     }
 }
+
+/* Skills Section Redesign */
+
+#skills {
+    text-align: center;
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    max-width: 850px;
+    margin: 30px auto;
+}
+
+.skills span {
+    background: #1e293b;
+    border: 1px solid #334155;
+    padding: 22px;
+    border-radius: 12px;
+    color: #38bdf8;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.skills span:hover {
+    border-color: #38bdf8;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(56, 189, 248, 0.12);
+}
