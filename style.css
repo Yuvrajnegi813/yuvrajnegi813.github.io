@@ -251,3 +251,24 @@ section {
         font-size: 21px;
     }
 }
+
+/* Homepage Layout Fix */
+
+.hero {
+    padding: 80px 20px 60px;
+    min-height: 400px;
+}
+
+#about p {
+    max-width: 850px;
+    line-height: 1.9;
+}
+
+section h2 {
+    margin-bottom: 25px;
+}
+
+.hero p {
+    max-width: 650px;
+    margin: 20px auto;
+}
