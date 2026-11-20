@@ -523,3 +523,57 @@ section h2 {
     }
 
 }
+
+/* About Section */
+.about-container {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+}
+
+.about-container h2 {
+    font-size: 32px;
+    margin-bottom: 25px;
+    color: #00aaff;
+}
+
+.about-container > p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #cccccc;
+    margin-bottom: 15px;
+}
+
+.about-highlights {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 35px;
+}
+
+.about-card {
+    background: #17243a;
+    padding: 22px 30px;
+    border-radius: 12px;
+    min-width: 150px;
+    border: 1px solid #263b59;
+    transition: 0.3s;
+}
+
+.about-card:hover {
+    transform: translateY(-6px);
+    border-color: #00aaff;
+}
+
+.about-card h3 {
+    color: #00aaff;
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.about-card p {
+    color: #cccccc;
+    font-size: 14px;
+}
+
