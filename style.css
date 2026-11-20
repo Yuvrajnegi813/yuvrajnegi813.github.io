@@ -900,3 +900,10 @@ nav .logo:hover::after {
 nav .logo {
     display: inline-block;
 }
+nav .logo::after {
+    width: 100%;
+}
+
+nav .logo:hover::after {
+    width: 100%;
+}
