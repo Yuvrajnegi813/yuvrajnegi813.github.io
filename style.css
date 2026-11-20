@@ -190,3 +190,64 @@ section {
         transform: translateY(0);
     }
 }
+
+/* Homepage Improvements */
+
+.intro-tag {
+    color: #38bdf8;
+    letter-spacing: 3px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.hero h1 {
+    font-size: 52px;
+    margin: 15px 0;
+}
+
+.hero h2 {
+    color: #cbd5e1;
+    font-size: 25px;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.main-btn,
+.secondary-btn {
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.main-btn {
+    background: #38bdf8;
+    color: #0f172a;
+}
+
+.secondary-btn {
+    border: 1px solid #38bdf8;
+    color: #38bdf8;
+}
+
+.main-btn:hover,
+.secondary-btn:hover {
+    transform: translateY(-4px);
+}
+
+@media screen and (max-width: 768px) {
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero h2 {
+        font-size: 21px;
+    }
+}
