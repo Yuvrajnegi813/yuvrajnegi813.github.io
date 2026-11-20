@@ -398,3 +398,128 @@ section h2 {
     transform: translateY(-5px);
     box-shadow: 0 8px 20px rgba(56, 189, 248, 0.12);
 }
+
+/* ===== PROJECT SECTION REDESIGN ===== */
+
+#projects {
+    text-align: center;
+}
+
+#projects h2 {
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.projects-intro {
+    color: #cbd5e1;
+    max-width: 650px;
+    margin: 0 auto 40px;
+    line-height: 1.8;
+}
+
+/* Project Layout */
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+    max-width: 1050px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+/* Project Cards */
+
+#projects .project-card {
+    background: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 14px;
+    padding: 30px;
+    margin-bottom: 0;
+    transition: 0.3s ease;
+}
+
+#projects .project-card:hover {
+    transform: translateY(-7px);
+    border-color: #38bdf8;
+    box-shadow: 0 12px 30px rgba(56, 189, 248, 0.12);
+}
+
+/* Project Category */
+
+.project-category {
+    display: inline-block;
+    color: #38bdf8;
+    background: #0f3045;
+    padding: 7px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Project Title */
+
+#projects .project-card h3 {
+    font-size: 23px;
+    margin: 20px 0 12px;
+    color: white;
+}
+
+/* Project Description */
+
+#projects .project-card p {
+    color: #cbd5e1;
+    line-height: 1.8;
+    font-size: 14px;
+}
+
+/* Technology Tags */
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 22px 0;
+}
+
+.project-tags span {
+    background: #0f172a;
+    color: #38bdf8;
+    border: 1px solid #334155;
+    padding: 7px 11px;
+    border-radius: 6px;
+    font-size: 12px;
+}
+
+/* GitHub Button */
+
+#projects .project-btn {
+    display: inline-block;
+    background: #38bdf8;
+    color: #0f172a;
+    padding: 11px 20px;
+    border-radius: 7px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#projects .project-btn:hover {
+    background: #0284c7;
+    transform: translateY(-3px);
+}
+
+/* Mobile Responsive */
+
+@media screen and (max-width: 768px) {
+
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
+
+    #projects .project-card {
+        padding: 22px;
+    }
+
+}
