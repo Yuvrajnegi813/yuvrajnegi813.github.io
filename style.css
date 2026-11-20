@@ -865,3 +865,10 @@ section h2 {
         left: 0;
     }
 }
+nav h2 {
+    color: white;
+}
+
+nav h2 span {
+    color: #38bdf8;
+}
