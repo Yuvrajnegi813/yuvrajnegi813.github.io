@@ -95,3 +95,46 @@ footer {
     background: #111c33;
     color: #cbd5e1;
 }
+
+/* Mobile Responsive Design */
+
+@media screen and (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    nav div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    nav a {
+        margin-left: 0;
+    }
+
+    .hero {
+        padding: 65px 20px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    section {
+        padding: 40px 6%;
+    }
+
+    .skills {
+        justify-content: center;
+    }
+
+    .project-card {
+        padding: 18px;
+    }
+
+}
