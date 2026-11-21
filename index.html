@@ -344,10 +344,16 @@ function openPreview(project) {
     container.innerHTML = "";
 
     data.images.forEach(src => {
-        const img = document.createElement("img");
-        img.src = src;
-        img.alt = data.title;
-        container.appendChild(img);
+       const img = document.createElement("img");
+img.src = src;
+img.alt = data.title;
+
+img.onclick = function() {
+    document.getElementById("fullImage").src = src;
+    document.getElementById("imageViewer").style.display = "flex";
+};
+
+container.appendChild(img);
     });
 
     document.getElementById("previewModal").style.display = "flex";
@@ -356,7 +362,16 @@ function openPreview(project) {
 function closePreview() {
     document.getElementById("previewModal").style.display = "none";
 }
+    function closeImageViewer() {
+    document.getElementById("imageViewer").style.display = "none";
+}
 </script>
-
+<!-- Full Image Viewer -->
+<div id="imageViewer" class="image-viewer"
+     onclick="closeImageViewer()">
+    <button class="image-viewer-close"
+            onclick="closeImageViewer()">×</button>
+    <img id="fullImage" src="" alt="Full-size preview">
+</div>
 </body>
 </html>
