@@ -1001,3 +1001,35 @@ nav .logo:hover::after {
     border: none;
     cursor: pointer;
 }
+/* Attractive Project Preview Gallery */
+.preview-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+    padding: 15px;
+}
+
+.preview-images img {
+    width: 100%;
+    height: 260px;
+    object-fit: contain;
+    background: #111827;
+    border: 1px solid rgba(0, 220, 255, 0.35);
+    border-radius: 14px;
+    padding: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 220, 255, 0.08);
+}
+
+.preview-images img:hover {
+    transform: translateY(-6px) scale(1.02);
+    border-color: #00d9ff;
+    box-shadow: 0 8px 25px rgba(0, 220, 255, 0.25);
+}
+
+@media (max-width: 600px) {
+    .preview-images {
+        grid-template-columns: 1fr;
+    }
+}
