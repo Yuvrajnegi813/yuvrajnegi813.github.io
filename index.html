@@ -245,12 +245,20 @@
                 <span>Matplotlib</span>
             </div>
 
-            <a href="https://github.com/Yuvrajnegi813/EVA-Python-Data-Analysis"
-               target="_blank"
-               class="project-btn">
-                View Project →
-            </a>
+            <div class="project-buttons">
 
+    <a href="#" class="project-btn"
+       onclick="openPreview('eda'); return false;">
+        Preview ↗
+    </a>
+
+    <a href="https://github.com/Yuvrajnegi813/EVA-Python-Data-Analysis"
+       target="_blank"
+       class="project-btn">
+        View Project →
+    </a>
+
+</div>
         </div>
 
     </div>
@@ -293,6 +301,51 @@
     <footer>
         <p>© 2026 Yuvraj | Data Analytics Portfolio</p>
     </footer>
+
+<!-- Preview Popup -->
+<div id="previewModal" class="preview-modal">
+    <div class="preview-content">
+        <button class="close-preview" onclick="closePreview()">×</button>
+        <h2 id="previewTitle">Project Preview</h2>
+
+        <div id="previewImages" class="preview-images"></div>
+    </div>
+</div>
+
+<script>
+const previews = {
+    eda: {
+        title: "EDA Data Analysis",
+        images: [
+            "images/Insights.png",
+            "images/Results.png",
+            "images/Chart.png",
+            "images/EDA.png"
+        ]
+    }
+};
+
+function openPreview(project) {
+    const data = previews[project];
+    document.getElementById("previewTitle").textContent = data.title;
+
+    const container = document.getElementById("previewImages");
+    container.innerHTML = "";
+
+    data.images.forEach(src => {
+        const img = document.createElement("img");
+        img.src = src;
+        img.alt = data.title;
+        container.appendChild(img);
+    });
+
+    document.getElementById("previewModal").style.display = "flex";
+}
+
+function closePreview() {
+    document.getElementById("previewModal").style.display = "none";
+}
+</script>
 
 </body>
 </html>
