@@ -907,3 +907,68 @@ nav .logo::after {
 nav .logo:hover::after {
     width: 100%;
 }
+
+/* Project Preview Popup */
+.preview-modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.85);
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    overflow-y: auto;
+}
+
+.preview-content {
+    background: #111b2e;
+    border: 1px solid #334155;
+    border-radius: 15px;
+    padding: 30px;
+    width: 90%;
+    max-width: 1000px;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+}
+
+.preview-content h2 {
+    color: #38bdf8;
+    margin-bottom: 25px;
+}
+
+.preview-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.preview-images img {
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #334155;
+    cursor: pointer;
+}
+
+.close-preview {
+    position: absolute;
+    top: 12px;
+    right: 18px;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 32px;
+    cursor: pointer;
+}
+
+@media (max-width: 650px) {
+    .preview-images {
+        grid-template-columns: 1fr;
+    }
+
+    .preview-content {
+        width: 100%;
+        padding: 20px;
+    }
+}
