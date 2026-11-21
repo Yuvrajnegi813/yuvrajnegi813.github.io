@@ -972,3 +972,32 @@ nav .logo:hover::after {
         padding: 20px;
     }
 }
+/* Full Screen Image Viewer */
+.image-viewer {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.95);
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+.image-viewer img {
+    max-width: 90%;
+    max-height: 90vh;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.image-viewer-close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 35px;
+    color: white;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
